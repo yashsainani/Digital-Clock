@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, bisque, peru);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 7rem;
+    border-radius: 100%;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8),
+                inset 4px 4px 8px rgb(196, 115, 23),
+                inset -4px -4px 8px rgb(196, 115, 23);
+}
+
+h1 {
+    color: aliceblue;
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.6rem;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: aliceblue;
+}
+
+#hour, #minute, #second {
+    font-size: 4rem;
+    color: rgba(255, 0, 0, 0.7);
+}
+
+#meridiem {
+    font-size: 2rem;
+    color: rgba(255, 0, 0, 0.7);
+}
