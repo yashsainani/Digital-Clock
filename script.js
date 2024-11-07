@@ -9,7 +9,7 @@ function clock() {
     let currMinute = currTime.getMinutes();
     let currSeconds = currTime.getSeconds();
     meridiem.textContent = currHour >= 12 ? 'PM' : 'AM';
-    currHour %= 12;
+    currHour = currHour > 12 ? currHour % 12 : currHour;
     currHour = converting(currHour);
     currMinute = converting(currMinute);
     currSeconds = converting(currSeconds);
